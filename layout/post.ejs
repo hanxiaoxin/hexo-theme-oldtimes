@@ -1,11 +1,17 @@
 <div class="old-times-single-post">
     <div class="old-times-single-post-header">
         <div class="old-times-single-post-info">
-            <span class="old-times-single-post-info-span old-times-single-post-info-total">随笔:22</span><span class="old-times-single-post-info-span old-times-single-post-info-comment">评论:0</span>
+            <span class="old-times-single-post-info-span old-times-single-post-info-total">随笔:<%- site.posts.length %></span><span class="old-times-single-post-info-span old-times-single-post-info-comment">评论:0</span>
         </div>
     </div>
 
     <div class="old-times-single-post-content">
+        <% if(page && page.content) {%>
         <%- page.content %>
+        <% } else {
+            site.posts.sort('date', 'desc').forEach(function(post){
+        %>
+                <%- post.content %>
+        <% })}%>
     </div>
 </div>
