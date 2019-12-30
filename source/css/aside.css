@@ -1,0 +1,46 @@
+.old-times-sidebar{
+    width: 234px;
+    position: fixed;
+    height: 100vh;
+    left:0;
+    top:0;
+    background-color: #262a30;
+    overflow-y: auto;
+}
+
+.old-times-sidebar-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    color: #61afef;
+    border-bottom-width: 1px;
+    border-bottom-style: outset;
+    border-bottom-color: #D4D4D4;
+    padding: 20px 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.old-times-sidebar-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.old-times-sidebar-post-li{
+    margin: 5px;
+    list-style: none;
+}
+
+.old-times-sidebar-post-title {
+    color: #999;
+}
+
+
+.old-times-sidebar-post-title-active {
+    color: #87daff;
+}

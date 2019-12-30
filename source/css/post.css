@@ -1,0 +1,90 @@
+.old-times-single-post{
+    position: absolute;
+    left: 234px;
+    right:0;
+    top:0;
+    bottom:0;
+    max-width: calc(100vw - 234px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.old-times-single-post-header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.old-times-single-post-info{
+    position: absolute;
+    bottom: 10px;
+    font-size: 9px;
+    color: #555;
+}
+
+.old-times-single-post-content{
+    box-sizing: border-box;
+    margin: 20px 30px;
+}
+
+.old-times-single-post-info-span:nth-of-type(2){
+    margin-left: 10px;
+}
+
+
+/**
+tag css
+ */
+blockquote{
+    box-sizing: border-box;
+    margin: 1.6em 0 1.6em 0;
+    padding: 0 0 0 0.6em;
+    border-left: #4a4a4a 0.4em solid;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 40px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+}
+
+.gutter{
+    display: none;
+}
+
+figure {
+    overflow: auto;
+    margin: 20px 0;
+}
+
+li {
+    line-height: 1.6em;
+}
+
+pre{
+    color: #525252!important;
+    font-size: 0.8em!important;
+    background-color: #f8f8f8!important;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+table{
+    width: 100%;
+}
+
+.highlight{
+    line-height: 1.1em;
+}
