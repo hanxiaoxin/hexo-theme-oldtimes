@@ -1,10 +1,38 @@
-title: El Psy Congroo
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-author: hanxiaoxin
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
 
-menus:
-  主页: /
-  关于: /about
+# Content
+excerpt_link: Read More
+fancybox: true
 
-links:
-  github: https://github.com/hanxiaoxin
+# Sidebar
+sidebar: right
+widgets:
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+#评论系统
+comment: false
+
+#主题版本
+version: 0.1

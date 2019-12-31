@@ -20,6 +20,7 @@
     padding: 20px 0;
     margin-left: 20px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .old-times-sidebar-content{
@@ -43,4 +44,10 @@
 
 .old-times-sidebar-post-title-active {
     color: #87daff;
+}
+
+.old-times-theme-info{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
 }

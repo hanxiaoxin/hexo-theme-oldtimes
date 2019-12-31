@@ -4,10 +4,20 @@
    </div>
 
    <div class="old-times-sidebar-content">
-         <% site.posts.sort('date', 'desc').forEach(function(post){ %>
+         <% site.posts.sort('date', 'desc').forEach(function(post, index){ %>
+           <% if(page.path === 'index.html' && index === 0) { %>
                <li class="old-times-sidebar-post-li">
-                     <a class="old-times-sidebar-post-title" href="/<%- post.path %>"><%- post.title %></a>
+                   <a class="old-times-sidebar-post-title-active" href="/<%- post.path %>"><%- post.title %></a>
                </li>
+           <% }else if(is_current(post.path)) { %>
+               <li class="old-times-sidebar-post-li">
+                     <a class="old-times-sidebar-post-title-active" href="/<%- post.path %>"><%- post.title %></a>
+               </li>
+            <% }else { %>
+                   <li class="old-times-sidebar-post-li">
+                       <a class="old-times-sidebar-post-title" href="/<%- post.path %>"><%- post.title %></a>
+                   </li>
+            <% }%>
          <% }); %>
    </div>
 </div>
