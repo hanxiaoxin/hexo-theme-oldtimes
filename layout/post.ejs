@@ -7,15 +7,16 @@
 
     <div class="old-times-single-post-content">
         <% if(page && page.content) {%>
-        <%- page.content %>
+            <%- page.content %>
         <% } else {
-            site.posts.sort('date', 'desc').forEach(function(post){
+        site.posts.sort('date', 'desc').forEach(function(post, index){
+        if(index === 0) {
         %>
-                <%- post.content %>
-        <% })}%>
+            <%- post.content %>
+        <% }})}%>
     </div>
-
     <div class="site-theme-info">
+        <a href="http://beian.miit.gov.cn" class="site-beian">鄂ICP备19030757号-1</a>
         <span>Powered by Hexo | </span>
         <span style="margin-left: 5px;">Theme By</span>
         <a class="site-theme-link" href="https://github.com/hanxiaoxin/hexo-theme-oldtimes">hanxiaoxin</a>

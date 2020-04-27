@@ -102,6 +102,7 @@ table{
     justify-content: center;
     align-content: center;
     outline: 0;
+    position: relative;
 }
 
 
@@ -112,3 +113,20 @@ table{
     color: #5db2ff;
     transition: color linear .2s;
 }
+
+.site-beian{
+    position: absolute;
+    left: 500px;
+    text-decoration: none;
+    color: #4B9ECE;
+}
+
+.site-beian:hover {
+    text-underline: none;
+    text-decoration: none;
+}
+.site-beian:visited {
+    text-underline: none;
+    text-decoration: none;
+}
+
